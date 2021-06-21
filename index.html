@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <style>
-    body {
-        margin: 0;
+    .container {
+        padding-top: 0%; /* 1:1 Aspect Ratio */
+    }
+
+    /* Then style the iframe to fit in the container div with full height and width */
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
     }
 </style>
 <html>
@@ -9,9 +20,9 @@
         <Title>artism(map)</Title>
     </head>
     <body>
-        <iframe src="http://mc.yourmom.online:25568" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-            Your browser doesn't support iframes
-        </iframe>
+        <div class="container"> 
+            <iframe class="responsive-iframe" src="http://mc.yourmom.online:25568/"></iframe>
+          </div>
     </body>
     <script>
 
